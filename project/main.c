@@ -1,6 +1,7 @@
 #include "s5pv210.h"
 #include "led.h"
 #include "clock.h"
+#include "uart.h"
 
 void delay(volatile unsigned int i)
 {
@@ -28,6 +29,8 @@ int main(void)
         led_control(LED3, ON);
 
         delay(0xFFFFFF);
+
+        printf("I Love Gaoman!\n");
     }
 
     return 0;
@@ -37,4 +40,5 @@ void system_init(void)
 {
     led_init();
     clock_init();
+    uart2_init();
 }

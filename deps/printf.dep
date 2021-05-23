@@ -1,0 +1,3 @@
+objs/printf.o deps/printf.dep: stdio/lib/printf.c stdio/include/vsprintf.h \
+ stdio/include/types.h stdio/include/string.h stdio/include/printf.h \
+ bsp/uart/uart.h stdio/include/stdio.h s5pv210/s5pv210.h

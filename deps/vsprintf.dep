@@ -1,0 +1,4 @@
+objs/vsprintf.o deps/vsprintf.dep: stdio/lib/vsprintf.c stdio/include/types.h \
+ stdio/include/kernel.h stdio/include/ctype.h stdio/include/string.h \
+ stdio/include/types.h stdio/include/div64.h stdio/include/vsprintf.h \
+ bsp/uart/uart.h stdio/include/stdio.h s5pv210/s5pv210.h

@@ -1,0 +1,1 @@
+objs/muldi3.o deps/muldi3.dep: stdio/lib/muldi3.c stdio/include/gcclib.h

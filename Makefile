@@ -1,6 +1,6 @@
 .PHONY: all clean
 
-BUILD = led
+BUILD = uart
 
 CROSS_COMPILE 	?= arm-none-linux-gnueabi-
 
@@ -14,14 +14,18 @@ OBJCOPY 		:= $(CROSS_COMPILE)objcopy
 OBJDUMP 		:= $(CROSS_COMPILE)objdump
 
 INCDIRS 		:= s5pv210 \
+				   stdio/include \
 			       bsp/led \
 				   bsp/clock \
-				   bsp/sdram
+				   bsp/sdram \
+				   bsp/uart
 				   			   
 SRCDIRS			:= project \
+				   stdio/lib \
 				   bsp/led \
 				   bsp/clock \
-				   bsp/sdram
+				   bsp/sdram \
+				   bsp/uart
 
 DIR_OBJS = objs
 DIR_BUILDS = builds

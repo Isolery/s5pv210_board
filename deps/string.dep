@@ -1,0 +1,2 @@
+objs/string.o deps/string.dep: stdio/lib/string.c stdio/include/ctype.h stdio/include/string.h \
+ stdio/include/types.h

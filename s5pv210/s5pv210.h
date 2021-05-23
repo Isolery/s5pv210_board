@@ -1,3 +1,22 @@
+#ifndef __S5PV210_H__
+#define __S5PV210_H__
+
+typedef   signed          char int8_t;
+typedef   signed short     int int16_t;
+typedef   signed           int int32_t;
+typedef unsigned          char uint8_t;
+typedef unsigned short     int uint16_t;
+typedef unsigned           int uint32_t;
+typedef unsigned long     long uint64_t;
+typedef	  signed char  	 	   s8;		
+typedef	  signed short 	  int  s16;
+typedef	  signed int 		   s32;
+typedef	  signed long long int s64;
+typedef	unsigned char 		   u8;
+typedef	unsigned short int     u16;
+typedef	unsigned int 		   u32;
+typedef	unsigned long long int u64;
+
 /* S5PC110 device base addresses */
 #define ELFIN_DMA_BASE			0xE0900000
 #define ELFIN_LCD_BASE			0xF8000000
@@ -378,20 +397,52 @@
 #endif
 
 #define ULCON_OFFSET			0x00
-#define UCON_OFFSET			0x04
+#define UCON_OFFSET			    0x04
 #define UFCON_OFFSET			0x08
 #define UMCON_OFFSET			0x0C
 #define UTRSTAT_OFFSET			0x10
 #define UERSTAT_OFFSET			0x14
 #define UFSTAT_OFFSET			0x18
 #define UMSTAT_OFFSET			0x1C
-#define UTXH_OFFSET			0x20
-#define URXH_OFFSET			0x24
+#define UTXH_OFFSET			    0x20
+#define URXH_OFFSET			    0x24
 #define UBRDIV_OFFSET			0x28
 #define UDIVSLOT_OFFSET			0x2C
 #define UINTP_OFFSET			0x30
 #define UINTSP_OFFSET			0x34
 #define UINTM_OFFSET			0x38
+
+#define ULCON1_OFFSET			0x400
+#define UCON1_OFFSET			0x404
+#define UFCON1_OFFSET			0x408
+#define UMCON1_OFFSET			0x40C
+#define UTRSTAT1_OFFSET			0x410
+#define UERSTAT1_OFFSET			0x414
+#define UFSTAT1_OFFSET			0x418
+#define UMSTAT1_OFFSET			0x41C
+#define UTXH1_OFFSET			0x420
+#define URXH1_OFFSET		    0x424
+#define UBRDIV1_OFFSET			0x428
+#define UDIVSLOT1_OFFSET		0x42C
+#define UINTP1_OFFSET			0x430
+#define UINTSP1_OFFSET			0x434
+#define UINTM1_OFFSET			0x438
+
+#define ULCON2_OFFSET			0x800
+#define UCON2_OFFSET			0x804
+#define UFCON2_OFFSET			0x808
+#define UMCON2_OFFSET			0x80C
+#define UTRSTAT2_OFFSET			0x810
+#define UERSTAT2_OFFSET			0x814
+#define UFSTAT2_OFFSET			0x818
+#define UMSTAT2_OFFSET			0x81C
+#define UTXH2_OFFSET			0x820
+#define URXH2_OFFSET		    0x824
+#define UBRDIV2_OFFSET			0x828
+#define UDIVSLOT2_OFFSET		0x82C
+#define UINTP2_OFFSET			0x830
+#define UINTSP2_OFFSET			0x834
+#define UINTM2_OFFSET			0x838
 
 #define UTRSTAT_TX_EMPTY		BIT2
 #define UTRSTAT_RX_READY		BIT0
@@ -797,3 +848,5 @@
 #define ELFIN_TZPC1_BASE		0xFAD00000
 #define ELFIN_TZPC2_BASE		0xE0600000
 #define ELFIN_TZPC3_BASE		0xE1C00000
+
+#endif

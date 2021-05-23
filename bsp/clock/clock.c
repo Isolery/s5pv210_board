@@ -9,9 +9,6 @@
 
 void clock_init(void)
 {
-    // 暂时不使用PLL
-	CLK_SRC0 = 0x0;
-	
 	// 设置LOCKTIME
     APLL_LOCK = 0x0FFFF;
     MPLL_LOCK = 0x0FFFF;
@@ -24,6 +21,5 @@ void clock_init(void)
     MPLL_CON0 = (1 << 31) | (667 << 16) | (12 << 8) | (1 << 0);
 
     // 设置MUX
-    //CLK_SRC0 = (1 << 28) | (1 << 12) | (1 << 8) | (1 << 4) | (1 << 0);
-	CLK_SRC0 = 0x10001111;
+    CLK_SRC0 = (1 << 28) | (1 << 12) | (1 << 8) | (1 << 4) | (1 << 0);
 }

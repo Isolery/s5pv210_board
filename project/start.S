@@ -40,6 +40,8 @@ clear_loop:
 
 run_on_dram:	
 	// 长跳转到led_blink开始第二阶段
+	ldr sp, =0x31000000
+
 	ldr pc, =main				// ldr指令实现长跳转
 	
 // 汇编最后的这个死循环不能丢

@@ -1,0 +1,2 @@
+objs/uart.o deps/uart.dep: bsp/uart/uart.c bsp/uart/uart.h stdio/include/stdio.h \
+ stdio/include/types.h s5pv210/s5pv210.h
