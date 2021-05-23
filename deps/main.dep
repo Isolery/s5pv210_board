@@ -1,0 +1,1 @@
+objs/main.o deps/main.dep: project/main.c s5pv210/s5pv210.h bsp/led/led.h bsp/clock/clock.h

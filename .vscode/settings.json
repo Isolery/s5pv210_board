@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "*.elf": "arm",
+        "clock.h": "c",
+        "uart.h": "c"
+    }
+}

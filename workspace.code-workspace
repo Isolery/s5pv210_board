@@ -1,0 +1,39 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"*.elf": "arm",
+			"led.h": "c",
+			"s3c2440_soc.h": "c",
+			"key.h": "c",
+			"uart.h": "c",
+			"types.h": "c",
+			"kernel.h": "c",
+			"printf.h": "c",
+			"sdram.h": "c",
+			"exception.h": "c",
+			"interrupt.h": "c",
+			"timer.h": "c",
+			"norflash.h": "c",
+			"stdio.h": "c",
+			"nandflash.h": "c",
+			"lcd_controller.h": "c",
+			"lcd.h": "c",
+			"lcd_4.3.h": "c",
+			"geometry.h": "c",
+			"font.h": "c",
+			"framebuffer.h": "c",
+			"adc.h": "c",
+			"touchscreen.h": "c",
+			"tslib.h": "c",
+			"time.h": "c",
+			"string.h": "c",
+			"i2c_controller.h": "c",
+			"clock.h": "c"
+		}
+	}
+}

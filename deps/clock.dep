@@ -1,0 +1,1 @@
+objs/clock.o deps/clock.dep: bsp/clock/clock.c bsp/clock/clock.h s5pv210/s5pv210.h
