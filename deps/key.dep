@@ -1,0 +1,2 @@
+objs/key.o deps/key.dep: bsp/key/key.c bsp/key/key.h s5pv210/s5pv210.h bsp/uart/uart.h \
+ stdio/include/stdio.h stdio/include/types.h bsp/interrupt/int.h

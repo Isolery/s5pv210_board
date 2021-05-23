@@ -33,7 +33,9 @@
 			"time.h": "c",
 			"string.h": "c",
 			"i2c_controller.h": "c",
-			"clock.h": "c"
+			"clock.h": "c",
+			"s5pv210.h": "c",
+			"int.h": "c"
 		}
 	}
 }

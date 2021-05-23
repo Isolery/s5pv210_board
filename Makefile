@@ -18,14 +18,18 @@ INCDIRS 		:= s5pv210 \
 			       bsp/led \
 				   bsp/clock \
 				   bsp/sdram \
-				   bsp/uart
+				   bsp/uart \
+				   bsp/key \
+				   bsp/interrupt
 				   			   
 SRCDIRS			:= project \
 				   stdio/lib \
 				   bsp/led \
 				   bsp/clock \
 				   bsp/sdram \
-				   bsp/uart
+				   bsp/uart \
+				   bsp/key \
+				   bsp/interrupt
 
 DIR_OBJS = objs
 DIR_BUILDS = builds

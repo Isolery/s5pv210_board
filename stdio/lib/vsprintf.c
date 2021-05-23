@@ -27,6 +27,8 @@
 #include "vsprintf.h"
 #include "uart.h"
 
+typedef unsigned long long uint64_t;
+
 #define unlikely(x) __builtin_expect(!!(x), 0)
 
 #define ADDCH(str, ch) do { \
@@ -238,7 +240,7 @@ static char *put_dec_full(char *buf, unsigned q)
 }
 
 /* No inlining helps gcc to use registers better */
-static char *put_dec(char *buf, uint64_t num)
+static char *put_dec(char *buf, unsigned long long num)
 {
 	while (1) {
 		unsigned rem;
